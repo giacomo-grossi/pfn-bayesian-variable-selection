@@ -1,7 +1,7 @@
 # PFN for Bayesian Variable Selection
 
 Code of the M.Sc. thesis *Amortized Bayesian Variable Selection with Prior-Data Fitted Networks*
-(Giacomo Grossi, University of Florence and Rice University, 2026; advisors Prof. Meng Li). The thesis is in [`docs/thesis.pdf`](docs/thesis.pdf).
+(Giacomo Grossi, University of Florence and Rice University, 2026; advisor Prof. Meng Li). The thesis is in [`docs/thesis.pdf`](docs/thesis.pdf).
 
 A Prior-Data Fitted Network (PFN) is a transformer trained once on data sets simulated from a prior,
 which then returns posterior quantities for a new data set in a single forward pass. Here the network
