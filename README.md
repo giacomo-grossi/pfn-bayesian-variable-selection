@@ -82,6 +82,8 @@ python -m bench.ablation_report --results results/ablation,results/c_dart --save
 
 - T. Nagler (2023). Statistical foundations of prior-data fitted networks. *ICML*.
 - S. Müller et al. (2022). Transformers can do Bayesian inference. *ICLR*.
+- S. Müller, A. Reuter, N. Hollmann, D. Rügamer and F. Hutter (2025). Position: The future of Bayesian
+  prediction is prior-fitted. *ICML*.
 - B. Luo (2026). SelectPFN: Amortized Bayesian variable selection for sparse nonlinear regression with
   prior-data fitted networks. *arXiv:2610.21950*. The architecture and meta-prior of this repository
   are an independent implementation following this paper.
