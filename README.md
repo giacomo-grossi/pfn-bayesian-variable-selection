@@ -19,7 +19,7 @@ regression, with no MCMC at inference time.
 - **Training.** Binary cross-entropy between the predicted PIPs and the true active set, which is
   minimized by the exact PIPs under the meta-prior, plus an auxiliary predictive loss.
 
-## Results (from the thesis)
+## Results 
 
 | Design | Reference (MCMC) | AUPRC difference, network minus reference (s.e.) |
 |---|---|---|
