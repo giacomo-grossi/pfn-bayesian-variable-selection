@@ -1,12 +1,9 @@
 """Figure 6.1 of the thesis (AUPRC by setting) from the report of bench.simple_report.
 
 Usage: python make_figures.py simple_report_completo.md output_folder
-Writes the figure as PDF (for LaTeX) and PNG (for a quick look).
+Writes the figure as PDF and PNG.
 
-Style: sober, for print. rSelectPFN in dark blue, the spike-and-slab model in neutral grey and
-DART in muted orange; thin marks, a light horizontal grid, one legend, Computer Modern text at
-8-9 pt, width equal to the text width of the thesis (5.4 in) so that LaTeX does not rescale the
-fonts.
+
 """
 
 import os
