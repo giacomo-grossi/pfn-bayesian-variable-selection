@@ -4,9 +4,10 @@ Code of the M.Sc. thesis *Amortized Bayesian Variable Selection with Prior-Data 
 (Giacomo Grossi, University of Florence and Rice University, 2026; advisor Prof. Meng Li). The thesis is in [`docs/thesis.pdf`](docs/thesis.pdf).
 
 A Prior-Data Fitted Network (PFN) is a transformer trained once on data sets simulated from a prior,
-which then returns posterior quantities for a new data set in a single forward pass. This project presents a prior fitted networks designed to 
-return, for every covariate, the **posterior inclusion probability** (PIP) in sparse nonlinear
-regression, with no MCMC at inference time.
+which then returns posterior quantities for a new data set in a single forward pass. This project presents a prior-data fitted network (PFN) designed to return, for every covariate, the
+**posterior inclusion probability** (PIP) in sparse nonlinear regression. Trained once on data sets simulated from a meta-prior, the network processes a new data set in a
+single forward pass, reducing the computing time by three to four orders of magnitude compared to the
+MCMC baselines (spike-and-slab regression and DART).
 
 - **Meta-prior.** Training data sets are simulated from a hierarchical meta-prior: correlated and
   non-Gaussian covariates (Gaussian copula with independent, AR(1), block and factor structures),
