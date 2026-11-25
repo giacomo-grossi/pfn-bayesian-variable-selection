@@ -1,4 +1,4 @@
-"""BART and DART, the two MCMC competitors (R package BART, function wbart).
+"""BART and DART (R package BART, function wbart).
 
     BART  Chipman, George and McCulloch (2010): sum of ntree trees, uniform splitting
           probabilities over the p variables.
