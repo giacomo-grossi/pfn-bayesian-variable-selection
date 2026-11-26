@@ -8,29 +8,6 @@ This project presents a prior-data fitted network designed to return, for every 
 single forward pass, reducing the computing time by three to four orders of magnitude compared to the
 MCMC baselines (spike-and-slab regression and DART).
 
-- **Meta-prior.** Training data sets are simulated from a hierarchical meta-prior: correlated and
-  non-Gaussian covariates (Gaussian copula with independent, AR(1), block and factor structures),
-  a sparse beta-Bernoulli active set, regression functions from seven families (linear, additive,
-  pairwise, interaction-only, random MLPs, trees, Gaussian processes) and Gaussian, heavy-tailed or
-  heteroscedastic noise.
-- **Network.** Every cell of the table is embedded as a vector; six layers alternate attention across
-  the variables of an observation and across the observations of a variable, so the output does not
-  depend on the order of rows or columns. Each column is pooled into one PIP.
-- **Training.** Binary cross-entropy between the predicted PIPs and the true active set, which is
-  minimized by the exact PIPs under the meta-prior, plus an auxiliary predictive loss.
-
-## Results 
-
-| Design | Reference (MCMC) | AUPRC difference, network minus reference (s.e.) |
-|---|---|---|
-| Linear, equicorrelated | spike-and-slab | -0.008 (0.005) |
-| Linear, Toeplitz | spike-and-slab | +0.039 (0.007) |
-| Friedman, equicorrelated | DART | +0.040 (0.006) |
-| Friedman, Toeplitz | DART | +0.024 (0.005) |
-
-On the 800 data sets of each family the network takes about ten seconds, against about 3.3 hours for
-spike-and-slab regression and 20 hours for DART. An ablation of the meta-prior shows that covariates
-acting only through interactions are recovered only when such structures are in the training prior.
 
 ## Repository
 
