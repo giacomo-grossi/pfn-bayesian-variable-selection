@@ -6,7 +6,7 @@ Code of the M.Sc. thesis *Amortized Bayesian Variable Selection with Prior-Data 
 This project presents a prior-data fitted network designed to return, for every covariate, the
 **posterior inclusion probability** in sparse nonlinear regression. Trained once on data sets simulated from a meta-prior, the network processes a new data set in a
 single forward pass, reducing the computing time by three to four orders of magnitude compared to the
-MCMC baselines (spike-and-slab regression and DART).
+MCMC baselines.
 
 
 ## Repository
